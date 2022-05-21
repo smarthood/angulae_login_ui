@@ -12,15 +12,15 @@
         <button routerLink="/">Sign up</button>
       </div>
       <div class="right-center">
-        <form>
+        <form [formGroup ]="loginForm">
           <h2>Enter Credentials</h2>
           <label>Email<br />
-            <input type="email" class="ui-field" placeholder="example@gmail.com"><br />
+            <input type="email" class="ui-field" placeholder="example@gmail.com" formControlName="email"><br />
           </label>
           <label>Password<br />
-            <input type="password" class="ui-field" placeholder="6+character">
+            <input type="password" class="ui-field" placeholder="6+character" formControlName="password">
           </label><br />
-          <button>Login</button>
+          <button type="submit">Login</button>
         </form>
       </div>
       </div>
